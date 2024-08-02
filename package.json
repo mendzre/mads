@@ -9,7 +9,8 @@
   "scripts": {
     "build": "npm run build -w mads",
     "dev:mads": "npm run dev -w mads",
-    "dev:website": "npm run dev -w website"
+    "dev:website": "npm run dev -w website",
+    "publish": "npm publish -w mads"
   },
   "keywords": [],
   "author": "",
