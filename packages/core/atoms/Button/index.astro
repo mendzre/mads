@@ -1,0 +1,8 @@
+---
+import type { ButtonProps as Props } from "@types/mads";
+const props = Astro.props;
+---
+
+<button {...props}>
+  <slot />
+</button>
