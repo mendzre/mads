@@ -1,8 +1,14 @@
 {
   "name": "mads",
+  "author": "mendzre",
+  "description": "",
+  "license": "MIT",
   "main": "./src/index.ts",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": "./src/index.ts",
     "./styles.css": "./dist/assets/index.css"
@@ -16,5 +22,9 @@
   },
   "devDependencies": {
     "mads-types": "1.0.0"
+  },
+  "peerDependencies": {
+    "astro": "^4.13.0",
+    "tailwind-merge": "^2.4.0"
   }
 }
