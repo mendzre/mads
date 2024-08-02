@@ -1,2 +1,2 @@
-export type * from "./atoms.d";
+export type * from "mads-types/atoms";
 

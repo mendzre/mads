@@ -1,0 +1,15 @@
+---
+import type { ButtonProps as Props } from "mads-types";
+import styles from "./styles";
+
+const {
+  variant = "fill",
+  size = "md",
+  class: className,
+  ...props
+} = Astro.props as Props;
+---
+
+<button class={styles.getClass({ variant, size }, className)} {...props}>
+  <slot />
+</button>

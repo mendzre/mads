@@ -10,11 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.12.3",
-    "@astrojs/check": "^0.9.1",
     "mads": "1.0.0"
   },
   "devDependencies": {
-    "@types/mads": "1.0.0"
+    "mads-types": "1.0.0"
   }
 }

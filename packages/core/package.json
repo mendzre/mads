@@ -1,20 +1,20 @@
 {
   "name": "mads",
-  "description": "",
-  "version": "1.0.0",
-  "homepage": "https://github.com/owner/project#readme",
+  "main": "./src/index.ts",
   "type": "module",
+  "version": "1.0.0",
   "exports": {
-    ".": "./index.ts"
+    ".": "./src/index.ts",
+    "./styles.css": "./dist/assets/index.css"
   },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "astro",
-    "design-system"
-  ], 
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
   "devDependencies": {
-    "@types/mads": "1.0.0"
+    "mads-types": "1.0.0"
   }
 }
