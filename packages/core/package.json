@@ -22,10 +22,12 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "mads-types": "1.0.0"
+    "mads-types": "1.0.0",
+    "@types/tinycolor2": "^1.4.6"
   },
   "peerDependencies": {
     "astro": "^4.13.0",
-    "tailwind-merge": "^2.4.0"
+    "tailwind-merge": "^2.4.0",
+    "tinycolor2": "^1.6.0"
   }
 }

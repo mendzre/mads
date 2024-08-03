@@ -2,12 +2,12 @@ import type { ButtonVariant } from "mads-types";
 import { defineClass } from "../../utils/mads";
 
 const styles = defineClass<ButtonVariant>({
-  base: "font-normal leading-none capitalize",
+  base: "border font-normal leading-none capitalize disabled:opacity-50 transition-colors",
   variants: {
     type: {
-      fill: "bg-black text-white",
-      outline: "",
-      text: "",
+      fill: "bg-opacity-80 text-white border-opacity-0 hover:enabled:bg-opacity-100",
+      outline: "text-opacity-100 border-opacity-100 hover:enabled:bg-opacity-5",
+      text: "bg-opacity-0 text-opacity-100 border-opacity-0 hover:enabled:bg-opacity-5",
     },
     size: {
       sm: "px-2 py-1 rounded text-xs",
