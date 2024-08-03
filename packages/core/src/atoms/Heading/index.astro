@@ -9,9 +9,9 @@ import styles from "./styles";
 
 const {
   color,
-  variant = "h1",
+  variant,
   size,
-  tag = "h1",
+  tag,
   class: className,
   style,
   ...props
@@ -25,13 +25,16 @@ const tags: Record<HeadingVariant, HeadingTag> = {
   h5: "h5",
   h6: "h6",
 };
-const Tag: HTMLTag = tags[tag];
+
+const selectedVariant = variant && variant in tags ? variant : "h1";
+const selectedTag = tag && tag in Object.values(tags) ? tag : selectedVariant;
+const Tag: HTMLTag = tags[selectedTag];
 ---
 
 <Tag
-  class={styles.getClass({ variant }, className)}
+  class={styles.getClass({ variant: selectedVariant }, className)}
   style={{
-    ...styles.getStyle(variant, { color, className }),
+    ...styles.getStyle(selectedVariant, { color, className }),
     ...(style as astroHTML.JSX.CSSProperties),
   }}
   {...props}

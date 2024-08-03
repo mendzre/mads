@@ -3,7 +3,7 @@ import { defineClass } from "../../utils/mads";
 
 const styles = defineClass<ButtonVariant>({
   color: "#000000",
-  base: "flex items-center border font-normal leading-none capitalize disabled:opacity-50 transition-colors",
+  base: "flex items-center justify-center border w-fit font-normal capitalize text-center leading-none disabled:opacity-50 transition-colors",
   variants: {
     type: {
       fill: "bg-opacity-80 text-white border-opacity-0 hover:enabled:bg-opacity-100",
