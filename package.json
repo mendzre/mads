@@ -1,16 +1,17 @@
 {
   "name": "design-system",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
   "workspaces": [
-    "website",
+    "docs",
     "packages/*"
   ],
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "build": "npm run build -w mads",
-    "dev:mads": "npm run dev -w mads",
-    "dev:website": "npm run dev -w website",
-    "publish": "npm publish -w mads"
+    "build": "npm run build -w mads-core",
+    "dev:core": "npm run dev -w mads-core",
+    "dev:docs": "npm run dev -w docs",
+    "publish": "npm publish -w mads-core"
   },
   "keywords": [],
   "author": "",

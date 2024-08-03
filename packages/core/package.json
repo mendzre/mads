@@ -1,5 +1,5 @@
 {
-  "name": "mads",
+  "name": "mads-core",
   "author": "mendzre",
   "description": "",
   "license": "MIT",
@@ -29,5 +29,10 @@
     "astro": "^4.13.0",
     "tailwind-merge": "^2.4.0",
     "tinycolor2": "^1.6.0"
-  }
+  },
+  "keywords": [
+    "astro-component",
+    "withastro",
+    "ui"
+  ]
 }

@@ -1,7 +1,8 @@
 {
-  "name": "website",
-  "type": "module",
+  "name": "mads-docs",
   "version": "0.0.1",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,7 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "mads": "1.0.4"
+    "astro-expressive-code": "^0.35.6",
+    "mads-core": "1.0.4"
   },
   "devDependencies": {
     "mads-types": "1.0.0"
