@@ -1,0 +1,40 @@
+---
+import type { HTMLTag } from "astro/types";
+import type {
+  HeadingProps as Props,
+  HeadingVariant,
+  HeadingTag,
+} from "mads-types";
+import styles from "./styles";
+
+const {
+  color,
+  variant = "h1",
+  size,
+  tag = "h1",
+  class: className,
+  style,
+  ...props
+} = Astro.props as Props;
+
+const tags: Record<HeadingVariant, HeadingTag> = {
+  h1: "h1",
+  h2: "h2",
+  h3: "h3",
+  h4: "h4",
+  h5: "h5",
+  h6: "h6",
+};
+const Tag: HTMLTag = tags[tag];
+---
+
+<Tag
+  class={styles.getClass({ variant }, className)}
+  style={{
+    ...styles.getStyle(variant, { color, className }),
+    ...(style as astroHTML.JSX.CSSProperties),
+  }}
+  {...props}
+>
+  <slot />
+</Tag>

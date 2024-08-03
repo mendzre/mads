@@ -3,7 +3,7 @@ import type { ButtonProps as Props } from "mads-types";
 import styles from "./styles";
 
 const {
-  color = "black",
+  color,
   variant = "fill",
   size = "md",
   class: className,
@@ -15,7 +15,7 @@ const {
 <button
   class={styles.getClass({ variant, size }, className)}
   style={{
-    ...styles.getStyle({ variant, color }, className),
+    ...styles.getStyle(variant, { color, className }),
     ...(style as astroHTML.JSX.CSSProperties),
   }}
   {...props}

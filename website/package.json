@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "mads": "1.0.0"
+    "mads": "1.0.4"
   },
   "devDependencies": {
     "mads-types": "1.0.0"

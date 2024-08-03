@@ -1,5 +1,5 @@
 ---
-import { Button } from "../atoms";
+import { Heading } from "../index";
 ---
 
 <html lang="en">
@@ -12,42 +12,13 @@ import { Button } from "../atoms";
   </head>
   <body class="grid place-items-center w-screen h-screen">
     <main class="flex flex-col gap-2">
-      <h2>Fill</h2>
-      <div class="flex gap-4 items-center mb-2">
-        <Button variant="fill" size="sm">Small</Button>
-        <Button variant="fill" size="md">Medium</Button>
-        <Button variant="fill" size="lg">Large</Button>
-        <Button variant="fill" disabled>Disabled</Button>
-      </div>
-
-      <h2>Outline</h2>
-      <div class="flex gap-4 items-center mb-2">
-        <Button variant="outline" size="sm">Small</Button>
-        <Button variant="outline" size="md">Medium</Button>
-        <Button variant="outline" size="lg">Large</Button>
-        <Button variant="outline" disabled>Disabled</Button>
-      </div>
-
-      <h2>Text</h2>
-      <div class="flex gap-4 items-center mb-2">
-        <Button variant="text" size="sm">Small</Button>
-        <Button variant="text" size="md">Medium</Button>
-        <Button variant="text" size="lg">Large</Button>
-        <Button variant="text" disabled>Disabled</Button>
-      </div>
-
-      <h2>Custom</h2>
-      <div class="flex gap-4 items-center mb-2">
-        <Button color="red">Custom</Button>
-        <Button color="red" variant="outline">Custom</Button>
-        <Button color="red" variant="text">Custom</Button>
-
-        <Button class="bg-blue-600">Custom</Button>
-        <Button
-          class="text-blue-600 border-blue-600 hover:bg-blue-600"
-          variant="outline">Custom</Button
-        >
-        <Button class="bg-blue-600" variant="text">Custom</Button>
+      <div class="flex flex-col gap-4 mb-2">
+        <Heading variant="h1">Heading 1</Heading>
+        <Heading variant="h2">Heading 2</Heading>
+        <Heading variant="h3">Heading 3</Heading>
+        <Heading variant="h4">Heading 4</Heading>
+        <Heading variant="h5">Heading 5</Heading>
+        <Heading variant="h6">Heading 6</Heading>
       </div>
     </main>
   </body>
