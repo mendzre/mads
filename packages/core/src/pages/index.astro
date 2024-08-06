@@ -1,5 +1,5 @@
 ---
-import { Button, Heading } from "../index";
+import { Button } from "../index";
 ---
 
 <html lang="en">
@@ -12,14 +12,23 @@ import { Button, Heading } from "../index";
   </head>
   <body class="grid place-items-center w-screen h-screen">
     <main class="flex flex-col gap-2">
-      <div class="flex flex-col gap-4 mb-2">
-        <Heading variant="h1">Heading 1</Heading>
-        <Heading variant="h2">Heading 2</Heading>
-        <Heading variant="h3">Heading 3</Heading>
-        <Heading variant="h4">Heading 4</Heading>
-        <Heading variant="h5">Heading 5</Heading>
-        <Heading variant="h6">Heading 6</Heading>
-        <Heading color="red" variant="h3" tag="h2">Heading 6</Heading>
+      <div class="flex items-center gap-4 mb-2">
+        <Button color="green" variant="fill:sm">Defult</Button>
+        <Button color="green" variant="fill:md">Defult</Button>
+        <Button color="green" variant="fill:lg">Defult</Button>
+        <Button color="green" variant="fill:md" disabled>Defult</Button>
+      </div>
+      <div class="flex items-center gap-4 mb-2">
+        <Button color="green" variant="outline:sm">Defult</Button>
+        <Button color="green" variant="outline:md">Defult</Button>
+        <Button color="green" variant="outline:lg">Defult</Button>
+        <Button color="green" variant="outline:md" disabled>Defult</Button>
+      </div>
+      <div class="flex items-center gap-4 mb-2">
+        <Button color="green" variant="text:sm">Defult</Button>
+        <Button color="green" variant="text:md">Defult</Button>
+        <Button color="green" variant="text:lg">Defult</Button>
+        <Button color="green" variant="text:md" disabled>Defult</Button>
       </div>
     </main>
   </body>

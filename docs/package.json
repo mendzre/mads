@@ -11,8 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro-expressive-code": "^0.35.6",
-    "mads-core": "1.0.4"
+    "mads-core": "1.0.4",
+    "astro-expressive-code": "^0.35.6"
   },
   "devDependencies": {
     "mads-types": "1.0.0"

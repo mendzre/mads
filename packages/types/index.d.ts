@@ -1,3 +1,2 @@
-export type * from "mads-types/shared";
-export type * from "mads-types/atoms";
-
+export type * from "./core.d";
+export type * from "./atoms.d";

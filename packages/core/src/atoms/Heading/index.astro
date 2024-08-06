@@ -7,16 +7,6 @@ import type {
 } from "mads-types";
 import styles from "./styles";
 
-const {
-  color,
-  variant,
-  size,
-  tag,
-  class: className,
-  style,
-  ...props
-} = Astro.props as Props;
-
 const tags: Record<HeadingVariant, HeadingTag> = {
   h1: "h1",
   h2: "h2",
@@ -26,15 +16,24 @@ const tags: Record<HeadingVariant, HeadingTag> = {
   h6: "h6",
 };
 
+const {
+  color = "#000000",
+  variant,
+  tag,
+  class: className,
+  style,
+  ...props
+} = Astro.props as Props;
+
 const selectedVariant = variant && variant in tags ? variant : "h1";
 const selectedTag = tag && tag in Object.values(tags) ? tag : selectedVariant;
 const Tag: HTMLTag = tags[selectedTag];
 ---
 
 <Tag
-  class={styles.getClass({ variant: selectedVariant }, className)}
+  class={styles.getClass(selectedVariant, className)}
   style={{
-    ...styles.getStyle(selectedVariant, { color, className }),
+    ...styles.getStyle(color),
     ...(style as astroHTML.JSX.CSSProperties),
   }}
   {...props}

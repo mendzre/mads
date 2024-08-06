@@ -1,9 +1,19 @@
-import type { HTMLAttributes, HTMLTag } from "astro/types";
-import type { SizeVariant, ComponentProps } from "./shared";
+import type { HTMLAttributes } from "astro/types";
+import type { ComponentProps } from "./core";
 
 export type ButtonVariant = "fill" | "outline" | "text";
+export type ComposeButtonVariant =
+  | "fill:sm"
+  | "fill:md"
+  | "fill:lg"
+  | "outline:sm"
+  | "outline:md"
+  | "outline:lg"
+  | "text:sm"
+  | "text:md"
+  | "text:lg";
 export interface ButtonProps
-  extends ComponentProps<ButtonVariant>,
+  extends ComponentProps<ComposeButtonVariant>,
     HTMLAttributes<"button"> {}
 
 export type HeadingVariant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";

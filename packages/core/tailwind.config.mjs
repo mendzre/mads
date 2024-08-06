@@ -9,6 +9,15 @@ export default {
       height: {
         screen: ["100vh", "100dvh"],
       },
+      backgroundColor: {
+        mads: "rgba(var(--mads-color) / var(--tw-bg-opacity))",
+      },
+      textColor: {
+        mads: "rgba(var(--mads-color) / var(--tw-text-opacity))",
+      },
+      borderColor: {
+        mads: "rgba(var(--mads-color) / var(--tw-border-opacity))",
+      },
     },
   },
 };
